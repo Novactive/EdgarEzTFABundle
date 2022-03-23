@@ -9,7 +9,7 @@ eZ Platform
 
 ## Description
 
-This bundle offer 
+The specific fork of the EdgarEzTFABundle where some bugs are fixed, only email method is kept enabled and automatic setup functionality is added
 
 ## Documentation
 

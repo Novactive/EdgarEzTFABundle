@@ -39,7 +39,7 @@ class ConfigureMenuListener implements TranslationContainerInterface
         return [
             (new Message(self::ITEM_PROFILE_TFA, 'messages'))->setDesc('Two Factor Authentication'),
             (new Message(self::ITEM_PROFILE_TFA_DESCRIPTION, 'messages'))->setDesc(
-                'Manage Two Factor Authentication with Email/SMS or Yubico Key'
+                'Manage Two Factor Authentication with Email'
             ),
         ];
     }

@@ -66,6 +66,16 @@ class AuthHandler extends AbstractProvider implements ProviderInterface
     }
 
     /**
+     * List all TFA Providers Config
+     *
+     * @return ?array
+     */
+    public function getProvidersConfig(): ?array
+    {
+        return $this->providersConfig;
+    }
+
+    /**
      * List all TFA Providers
      *
      * @return ProviderInterface[]

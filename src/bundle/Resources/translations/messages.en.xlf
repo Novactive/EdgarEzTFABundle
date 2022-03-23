@@ -54,8 +54,8 @@
         <note>key: user__content__tfa</note>
       </trans-unit>
       <trans-unit id="851618eedfdd18af12d4034caa240f4efa2bb9f4" resname="user__content__tfa_description">
-        <source>Manage Two Factor Authentication with Email/SMS or Yubico Key</source>
-        <target state="new">Manage Two Factor Authentication with Email/SMS or Yubico Key</target>
+        <source>Manage Two Factor Authentication with Email</source>
+        <target state="new">Manage Two Factor Authentication with Email</target>
         <note>key: user__content__tfa_description</note>
       </trans-unit>
     </body>

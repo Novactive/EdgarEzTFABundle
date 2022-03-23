@@ -72,19 +72,19 @@ class EmailAuthController extends Controller
      */
     protected function sendCode(int $code, string $emailFrom, string $emailTo)
     {
-        $message = \Swift_Message::newInstance();
+        $message = new \Swift_Message();
 
         $message->setSubject($this->translator->trans('Two Factor Authentication code', [], 'edgareztfa'))
-            ->setFrom($emailFrom)
-            ->setTo($emailTo)
-            ->setBody(
-                $this->renderView(
-                    'EdgarEzTFABundle:profile:tfa/email/mail.txt.twig',
-                    [
-                        'code' => $code,
-                    ]
-                ), 'text/html'
-            );
+                ->setFrom($emailFrom)
+                ->setTo($emailTo)
+                ->setBody(
+                    $this->renderView(
+                        'EdgarEzTFABundle:profile:tfa/email/mail.txt.twig',
+                        [
+                            'code' => $code,
+                        ]
+                    ), 'text/html'
+                );
 
         $this->mailer->send($message);
     }

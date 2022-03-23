@@ -83,9 +83,9 @@ class TFAController extends Controller
             foreach ($this->providers as $provider) {
                 $identifier = $provider->getIdentifier();
                 if ((isset($this->providersConfig[$identifier])
-                        && (!isset($this->providersConfig[$identifier]['disabled'])
-                            || (isset($this->providersConfig[$identifier]['disabled'])
-                                && $this->providersConfig[$identifier]['disabled'] !== true)))
+                     && (!isset($this->providersConfig[$identifier]['disabled'])
+                         || (isset($this->providersConfig[$identifier]['disabled'])
+                             && $this->providersConfig[$identifier]['disabled'] !== true)))
                     || !isset($this->providersConfig[$identifier])
                 ) {
                     $providers[$provider->getIdentifier()] = [
